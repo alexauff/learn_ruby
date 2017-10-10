@@ -6,17 +6,20 @@ def shout(word)
 	word.upcase!
 end
 
-def repeat(word)
-	word + " " + word
+def repeat(word, n=2)
+	word+(" "+word)*(n-1)
 end
 
-def repeat2(word, n=2)
-	word * n * " "
+def start_of_word(word,num)
+	word [0, num]
 end
 
-def start(word)
-	word.split
+def first_word(phrase)
+	phrase.split[0]
 end
 
+def titleize(word)
+	
+	
+end
 
-#write your code here
