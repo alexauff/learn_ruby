@@ -18,8 +18,16 @@ def first_word(phrase)
 	phrase.split[0]
 end
 
-def titleize(word)
+def titleize(phrase)
 	
-	
+    little_words = ["the","over","and"]
+    phrase.capitalize.split.map { |word|
+        if little_words.include?(word) 
+            word
+        else
+            word.capitalize
+        end
+    }.join(" ")
 end
+
 
